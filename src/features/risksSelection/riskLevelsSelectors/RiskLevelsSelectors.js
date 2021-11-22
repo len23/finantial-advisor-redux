@@ -17,10 +17,10 @@ export default function RiskLevelsSelectors(props) {
     <Col>LOW</Col>
     <Col className="text-end">HIGH</Col>
    </Row>
-   <Stack className="stack-position justify-content-between w-75 mx-auto" direction="horizontal">
+   <Stack className="stack-position justify-content-between w-75 mx-auto flex-wrap" direction="horizontal">
     {riskLevels.map((risk, index) => {
      return (<button
-      className={(risk.selected ? `bg-warning` : `bg-light`) + ` border p-4 mb-4`}
+      className={(risk.selected ? `bg-warning` : `bg-light`) + ` border p-4 mb-4 `}
       key={index}
       onClick={() => {
           dispatch(setRiskData()); 

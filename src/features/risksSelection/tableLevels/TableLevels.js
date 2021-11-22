@@ -3,8 +3,7 @@ import Table from 'react-bootstrap/Table'
 export default function TableLevels(props) {
 
   const { risksDataDetails } = props
-  console.log('risksDataDetails==>', risksDataDetails);
-
+  
   return (
     <Table striped bordered hover>
       <thead>
