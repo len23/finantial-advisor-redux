@@ -35,5 +35,14 @@ export const selectSelectedLevelValues = (state) => {
  }
  return valuesArr;
 }
+export const selectEmptyValuesWithkeys = (state) => {
+ const emptyValuesObject = {};
+ Object.keys(state.riskSelection[0]).forEach(key => {
+  if(key !== 'risk' &&  key !== 'selected') {
+  emptyValuesObject[key]=''
+  }
+ });
+ return emptyValuesObject;
+}
 export const { setRiskData, setSelectedRisk} = riskSelectionSlice.actions;
 export default riskSelectionSlice.reducer;

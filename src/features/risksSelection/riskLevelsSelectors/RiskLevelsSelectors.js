@@ -8,8 +8,8 @@ import './RiskLevelsSelectors.css';
 export default function RiskLevelsSelectors(props) {
 
   const dispatch = useDispatch();
-  const { riskLevels } = props;
-
+  const { riskLevels, onContinue } = props;
+  
  return (
   <div>
    <p className="text-center fs-3"><b>Please Select A Risk Level For Your Investment Portfolio</b></p>
@@ -33,6 +33,7 @@ export default function RiskLevelsSelectors(props) {
     <button
      className="continue-button bg-light border p-4 mb-4"
      disabled={!useSelector(selectSelectedLevel)}
+     onClick={onContinue}
     >
      Continue
     </button>
