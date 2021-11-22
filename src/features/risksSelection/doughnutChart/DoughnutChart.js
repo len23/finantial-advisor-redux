@@ -14,8 +14,7 @@ export default function DoughnutChart(props) {
 
   const chartData = {
     labels: LABELS.filter((d, i) => {
-      if (riskSelectedDetails[i]) return riskSelectedDetails[i];
-      return null;
+      return riskSelectedDetails[i] ?  riskSelectedDetails[i] : null
     }),
     datasets: [
       {
