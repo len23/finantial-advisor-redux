@@ -1,9 +1,8 @@
-import Table from 'react-bootstrap/Table'
+import Table from "react-bootstrap/Table";
 
 export default function TableLevels(props) {
+  const { risksDataDetails } = props;
 
-  const { risksDataDetails } = props
-  
   return (
     <Table striped bordered hover>
       <thead>
@@ -27,8 +26,9 @@ export default function TableLevels(props) {
               <td>{data.Foreign}</td>
               <td>{data.SmallCap}</td>
             </tr>
-          )
+          );
         })}
       </tbody>
-    </Table>)
+    </Table>
+  );
 }
