@@ -1,0 +1,9 @@
+.stack-position {
+ position: relative;
+}
+
+.continue-button { 
+ position: absolute;
+ right: -18%; 
+ text-decoration: none;
+}

@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import riskSelectionReducer from '../features/risksSelection/riskSelectionSlice';
+import recomendationsReducer from '../features/recomendations/recomendationsSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+   riskSelection: riskSelectionReducer,
+   recomendations: recomendationsReducer
   },
 });
