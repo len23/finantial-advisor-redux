@@ -11,6 +11,7 @@ import {
 import RiskSelected from "./riskSelected/RiskSelected";
 import CurrentPortfolio from "./currentPortfolio/CurrentPortfolio";
 import TableResults from "./tableResults/TableResults";
+import Transactions from "./transactions/Transactions";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -71,6 +72,7 @@ export default function Recomendations() {
         </Col>
         <Col lg={7}>
           <TableResults />
+          <Transactions />
         </Col>
       </Row>
     </div>
