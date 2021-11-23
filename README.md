@@ -15,6 +15,5 @@ You will also see any lint errors in the console.
 ### `Video Demo`
 You can see a video demo on how to start the application and a little demonstration of how it works
 
-
-https://user-images.githubusercontent.com/19497325/143007357-77b7fd74-c380-45e9-b149-13fea8e9e00c.mov
+[![Demo](https://user-images.githubusercontent.com/19497325/143008002-b20cfc0d-a9b6-4a07-b724-28e1d35f1eec.png)](https://youtu.be/HIfbfka6XSY "DEMO")
 
