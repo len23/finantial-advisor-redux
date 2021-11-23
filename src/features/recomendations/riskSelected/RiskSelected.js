@@ -4,7 +4,7 @@ export default function RiskSelected(props) {
   const { selectedRisk } = props;
   return (
     <div>
-      <h1>Ris Level {selectedRisk.risk}</h1>
+      <h1>Risk Level {selectedRisk.risk}</h1>
       <Table striped bordered hover>
         <thead>
           <tr>
