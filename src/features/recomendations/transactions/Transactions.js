@@ -46,8 +46,11 @@ export default function Transactions() {
  transactionsHelper();
 
  return (
-  <ul>
-   {listComponent && listComponent.map((p, i) => <li key={i}>{p}</li>)}
-  </ul>
+  <div>
+  <h3>Suggested Transactions</h3>
+   <ul className="list-group-flush bg-primary">
+    {listComponent && listComponent.map((p, i) => <li key={i} className="list-group-item">{p}</li>)}
+   </ul>
+  </div>
  )
 }
